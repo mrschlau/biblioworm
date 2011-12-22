@@ -1,0 +1,27 @@
+<h1>Listing worms</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Favorite author</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @worms.each do |worm| %>
+  <tr>
+    <td><%= worm.name %></td>
+    <td><%= worm.email %></td>
+    <td><%= worm.favorite_author %></td>
+    <td><%= link_to 'Show', worm %></td>
+    <td><%= link_to 'Edit', edit_worm_path(worm) %></td>
+    <td><%= link_to 'Destroy', worm, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Worm', new_worm_path %>

@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Contributing worm:</b>
+  <%= @book.contributing_worm_id %>
+</p>
+
+<p>
+  <b>Genre:</b>
+  <%= @book.genre %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @book.title %>
+</p>
+
+<p>
+  <b>Author:</b>
+  <%= @book.author %>
+</p>
+
+<p>
+  <b>Synopsis:</b>
+  <%= @book.synopsis %>
+</p>
+
+
+<%= link_to 'Edit', edit_book_path(@book) %> |
+<%= link_to 'Back', books_path %>

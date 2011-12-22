@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @worm.name %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @worm.email %>
+</p>
+
+<p>
+  <b>Favorite author:</b>
+  <%= @worm.favorite_author %>
+</p>
+
+
+<%= link_to 'Edit', edit_worm_path(@worm) %> |
+<%= link_to 'Back', worms_path %>

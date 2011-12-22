@@ -1,4 +1,8 @@
 BiblioTrial1::Application.routes.draw do
+  resources :books
+
+  resources :worms
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
