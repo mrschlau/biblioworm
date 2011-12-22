@@ -1,4 +1,6 @@
 class Book < ActiveRecord::Base
+    belongs_to :worm
+    
     validates :contributing_worm_id, :length => { :maximum => 3 }
     validates :genre, :length => { :maximum => 40 }
     validates :title, :length => { :maximum => 100 }
