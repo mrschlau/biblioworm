@@ -11,10 +11,10 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111222210040) do
+ActiveRecord::Schema.define(:version => 20111222231453) do
 
   create_table "books", :force => true do |t|
-    t.integer  "contributing_worm_id"
+    t.integer  "worm_id"
     t.string   "genre"
     t.string   "title"
     t.string   "author"
