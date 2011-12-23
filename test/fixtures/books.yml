@@ -1,14 +1,14 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 one:
-  contributing_worm_id: 1
+  worm_id: 1
   genre: MyString
   title: MyString
   author: MyString
   synopsis: MyString
 
 two:
-  contributing_worm_id: 1
+  worm_id: 1
   genre: MyString
   title: MyString
   author: MyString

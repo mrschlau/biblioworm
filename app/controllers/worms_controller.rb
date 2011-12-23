@@ -1,4 +1,6 @@
 class WormsController < ApplicationController
+    #layout 'mynewlayout'
+    
   # GET /worms
   # GET /worms.xml
   def index
@@ -35,6 +37,7 @@ class WormsController < ApplicationController
   # GET /worms/1/edit
   def edit
     @worm = Worm.find(params[:id])
+      render :layout => 'alt_application'
   end
 
   # POST /worms

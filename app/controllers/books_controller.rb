@@ -35,6 +35,7 @@ class BooksController < ApplicationController
   # GET /books/1/edit
   def edit
     @book = Book.find(params[:id])
+    render :layout => 'alt_application'
   end
 
   # POST /books
