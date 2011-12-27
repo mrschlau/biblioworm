@@ -17,7 +17,7 @@
     <td><%= worm.favorite_author %></td>
     <td><%= link_to 'Show', worm %></td>
     <td><%= link_to 'Edit', edit_worm_path(worm) %></td>
-    <td><%= link_to 'Destroy', worm, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Destroy', worm, :confirm => 'Are you sure?', :method => :delete, :remote=>true %></td>
   </tr>
 <% end %>
 </table>
