@@ -21,7 +21,7 @@
     <td><%= book.synopsis %></td>
     <td><%= link_to 'Show', book %></td>
     <td><%= link_to 'Edit', edit_book_path(book) %></td>
-    <td><%= link_to 'Destroy', book, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Shred', book, :confirm => 'Are you sure you want to shred this book?', :method => :delete, :remote=>true %></td>
   </tr>
 <% end %>
 </table>

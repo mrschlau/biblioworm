@@ -80,7 +80,7 @@ class WormsController < ApplicationController
 
     respond_to do |format|
       format.html { redirect_to(worms_url) }
-      format.js { render :text => "alert('user has been deleted')" }
+      format.js { render :text => "alert('Worm has been squashed!')" }
     end
   end
 end

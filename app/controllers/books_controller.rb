@@ -78,7 +78,7 @@ class BooksController < ApplicationController
 
     respond_to do |format|
       format.html { redirect_to(books_url) }
-      format.xml  { head :ok }
+      format.js { render :text => "alert('Book has been shredded')" }
     end
   end
 end
